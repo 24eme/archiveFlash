@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+
+
+<!-- <script type="text/javascript">
+	window.onload = function() {
+	  var context = new AudioContext();
+	}
+</script> -->
+
+<!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+<!-- <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.streamSwfUrl("squares.swf");
+    });
+</script> -->
+<script src="ruffle/web/packages/selfhosted/dist/ruffle.js"></script>
+<div>
+	<!-- <embed type="application/x-shockwave-flash" src="https://cors-anywhere.herokuapp.com/https://www.jeuxclic.com/jeux/game-1247344445.swf" width="1000" height="800"/> -->
+	<!-- <embed type="application/x-shockwave-flash" src="SWF/Penguin Stack.swf" width="1000" height="800"/> -->
+	<!-- <a href="https://www.jeuxclic.com/jeux/game-1247344445.swf" download="Pacman_Kiwi.swf">Télécharger l'image</a> -->
+</div>
+
+<h2>Read More Read Less Button</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more" style="display: none">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<button onclick="show()" id="show">Read more</button>
+
+<script>
+function show() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("show");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>

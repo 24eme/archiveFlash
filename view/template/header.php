@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="UTF-8">
 <script src="../ruffle/web/packages/selfhosted/dist/ruffle.js"></script>
 
@@ -16,8 +17,8 @@
         <span class="navbar-toggler-icon"></span>
       </button> -->
       <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-outline-light" onclick="window.location.href='index.php?action=login'">Connexion</button>
-        <button type="button" class="btn btn-sm btn-outline-light" onclick="window.location.href='index.php?action=register'">Inscription</button>
+        <button type="button" class="btn btn-sm btn-outline-light" onclick="window.location.href='index.php?action=add'"><i title="title of search" class="fa fa-fw fa-plus-circle"></i> Ajouter un jeu</button>
+        <!-- <button type="button" class="btn btn-sm btn-outline-light" onclick="window.location.href='index.php?action=register'">Inscription</button> -->
       </div>
     </div>
   </div>

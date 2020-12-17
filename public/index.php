@@ -12,11 +12,14 @@
 	            case 'game':
 	                game();
 	            break;
-	            case 'login':
-	                login();
+	            case 'add':
+	                add();
 	            break;
-	            case 'register':
-	                register();
+	            case 'form':
+	                form();
+	            break;
+	            case 'traitement_nG':
+	                traitement_nG();
 	            break;
 	    	}
 	    }

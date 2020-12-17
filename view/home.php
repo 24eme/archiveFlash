@@ -18,15 +18,16 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <?php foreach ($data['games'] as $id => $game) { ?>
-          <a href="index.php?action=game&id=<?php echo $id; ?>" style="text-decoration: none;">
+        <?php foreach ($files as $file) { 
+          $data = open('db/games/'.$file);?>
+          <a href="index.php?action=game&id=<?php echo $data['id']; ?>" style="text-decoration: none;">
             <div class="col mt-4">
               <div class="card shadow-sm">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="<?php echo $game['capture_link'];?>"/>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="<?php echo $data['capture_link'];?>"/>
 
                 <div class="card-body">
-                  <h5><?php echo $game['name']; ?></h5>
-                  <p class="card-text"><?php echo $game['description']; ?></p>
+                  <h5><?php echo $data['name']; ?></h5>
+                  <p class="card-text"><?php echo $data['description']; ?></p>
                   <!-- <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
